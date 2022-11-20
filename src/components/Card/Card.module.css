@@ -1,0 +1,35 @@
+.container{
+    background-color: brown;
+    border:1px solid black;
+    
+    border-radius: 15px;
+    width: 180px;
+    color:aliceblue ;
+    box-shadow: 0 0 10px black;
+}
+
+.image{
+    width: 175px;
+    border-radius: 15px;
+}
+
+.buttonContainer{
+    margin: 15px 10px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+    
+}
+
+.buttonContainer button {
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.data{
+    display: flex;
+    justify-content: space-around;
+}
+

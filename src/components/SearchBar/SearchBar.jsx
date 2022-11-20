@@ -1,4 +1,4 @@
-export default function SearchBar(props) {
+export function SearchBar(props) {
    return (
       <div>
          <input type='search' name='search'/>
