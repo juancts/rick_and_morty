@@ -1,20 +1,22 @@
-import { Card } from "../Card/Card.jsx";
+import Card from '../Card/Card';
 
-export function Cards(props) {
+export default function Cards(props) {
    const { characters } = props;
-   return (<div style={{
-      display: 'flex', justifyContent: 'space-around'
-   }}>
-      {characters.map((e) => (
+   return (
+   <div style={{
+      display: 'flex', justifyContent: 'center'
+   }} >
+      {characters.map(character => (
          <Card
-            name={e.name}
-            species={e.species}
-            gender={e.gender}
-            image={e.image}
-            onClose={() => window.alert('Emulamos que se cierra la card')}
+            key={character.name}
+            name={character.name}
+            species={character.species}
+            gender={character.gender}
+            image={character.image}
+            onClose={()=> props.onClose(character.id)}
+            
          />
       ))}
    </div>
-
-   );
+);
 }

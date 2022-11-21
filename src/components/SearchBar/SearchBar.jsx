@@ -1,8 +1,19 @@
-export function SearchBar(props) {
+import styles from "../SearchBar/SearchBar.module.css"
+import { useState } from "react";
+
+
+
+
+export default function SearchBar(props) {
+   const [id, setId] = useState("");
+   const handleOnChange = (e) => {
+      const { value } = e.target;
+      setId(value)
+   }
    return (
-      <div>
-         <input type='search' name='search'/>
-      <button onClick={()=> props.onSearch('Card a buscar')}>Buscar</button>
+      <div className={styles.container}>
+         <input type='search' name='search' onChange={handleOnChange}/>
+         <button onClick={()=> props.onSearch(id)}>Agregar</button>
       </div>
-   );
+   )
 }
