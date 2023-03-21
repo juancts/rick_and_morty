@@ -25,9 +25,9 @@ function About() {
       </div>
       <div>
         <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-github"></a>
-        <a href="#" class="fa fa-instagram"></a>
+        <a href="https://twitter.com/jotar81" class="fa fa-twitter"></a>
+        <a href="https://github.com/juancts" class="fa fa-github"></a>
+        <a href="https://www.linkedin.com/in/jjrodriguez81/" class="fa fa-linkedin"></a>
         
       </div>
     </div>
