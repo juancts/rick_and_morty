@@ -37,10 +37,7 @@ export default function Form(props) {
 
   return (
     <div className={styles.container}>
-      <div>
-        <p>username: ejemplo@gmail.com</p>
-        <p>pass: 1234</p>
-      </div>
+      
       <form onSubmit={handleSubmit}>
         <div>
           <label>Username:</label>
@@ -66,6 +63,10 @@ export default function Form(props) {
         </div>
         <button type="submit">Login</button>
       </form>
+      <div>
+        <p>username: ejemplo@gmail.com</p>
+        <p>pass: 1234</p>
+      </div>
     </div>
   );
 }
