@@ -40,7 +40,7 @@ export default function Form(props) {
       
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Username:</label>
+          <label>Username: ejemplo@gmail.com</label>
           <input
             name="username"
             type="text"
@@ -50,7 +50,7 @@ export default function Form(props) {
           {/* <p className={styles.error}>{errors.username ? errors.username : null}</p> */}
         </div>
         <div>
-          <label>Password</label>
+          <label>Password: 1234</label>
           <input
             type="password"
             name="password"
@@ -63,10 +63,7 @@ export default function Form(props) {
         </div>
         <button type="submit">Login</button>
       </form>
-      <div>
-        <p>username: ejemplo@gmail.com</p>
-        <p>pass: 1234</p>
-      </div>
+            
     </div>
   );
 }
