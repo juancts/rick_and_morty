@@ -38,27 +38,29 @@ function ContactForm() {
 
   return (
     <div className="form-container">
-      <h1>CONTACT ME:</h1>
-      <div className="divs">
-        <form ref={form} onSubmit={sendEmail}>
-          <h2>
-            <label htmlFor="name">Name:</label>
-          </h2>
+      <div className="formcontain">
+        <h2>CONTACT ME:</h2>
+        <div className="divs">
+          <form ref={form} onSubmit={sendEmail}>
+            <h2>
+              <label htmlFor="name"><h2>Name:</h2></label>
+            </h2>
 
-          <input type="text" name="user_name" id="name" required />
+            <input type="text" name="user_name" id="name" required />
 
-          <label htmlFor="email">
-            <h2>Email:</h2>
-          </label>
-          <input type="email" name="from_email" id="email" required />
+            <label htmlFor="email">
+              <h2>Email:</h2>
+            </label>
+            <input type="email" name="from_email" id="email" required />
 
-          <label htmlFor="message">
-            <h2>Message:</h2>
-          </label>
-          <textarea id="message" name="message" required />
+            <label htmlFor="message">
+              <h2>Message:</h2>
+            </label>
+            <textarea id="message" name="message" required />
 
-          <button type="submit">Submit</button>
-        </form>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
   );
