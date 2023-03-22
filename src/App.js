@@ -52,7 +52,7 @@ export default function App() {
         <Route path="/" element={<Form login={login} />} />
         <Route
           path="/home"
-          element={<Cards characters={characters} onClose={onClose} />}
+          element={<Cards characters={characters} onClose={onClose} onSearch={onSearch} />}
         />
         <Route path="/About" element={<About />} />
         <Route path="/Detail/:detailId" element={<Detail />} />
