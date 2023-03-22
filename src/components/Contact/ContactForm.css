@@ -4,16 +4,24 @@
     flex-direction: column;
     justify-content: center;
     margin: 40px;
-    color:antiquewhite;
+    color:rgb(252, 143, 1);
     background-color: burlywood;
+    opacity: 0,5;
     border-radius: 60px;
     
   }
 
-  
+  .form-container h1{
+    text-shadow: 2px 2px #353333;
+    text-decoration: wavy;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
+
   .divs{
     display: flex;
     justify-content: center;
+    
   }
 
   form {
@@ -39,7 +47,7 @@ label {
   }
   
   button[type="submit"] {
-    background-color: #007bff;
+    background-color: #23dbb3;
     color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
@@ -48,7 +56,7 @@ label {
   }
   
   button[type="submit"]:hover {
-    background-color: #0069d9;
+    background-color: #6bc1d6;
   }
   
   button[type="submit"]:disabled {
